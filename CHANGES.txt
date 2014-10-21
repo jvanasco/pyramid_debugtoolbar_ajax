@@ -1,2 +1,4 @@
+0.0.2 - 2014.10.21
+	bumped up to get actual item on pypi
 0.0.1 - 2014.10.21
 	initial import
