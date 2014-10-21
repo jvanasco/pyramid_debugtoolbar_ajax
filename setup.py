@@ -1,8 +1,8 @@
 """pyramid_debugtoolbar_ajax installation script.
 """
 import os
-
 from setuptools import setup
+from setuptools import find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, "README.md")).read()
@@ -12,21 +12,22 @@ requires = ['pyramid_debugtoolbar>=2.2', ]
 
 setup(
     name="pyramid_debugtoolbar_ajax",
+    author="Jonathan Vanasco",
+    author_email="jonathan@findmeon.com",
+    url="https://github.com/jvanasco/pyramid_debugtoolbar_ajax",
     version="0.0.1",
     description="Ajax support for pyramid_debugtoolbar",
-    long_description=README,
+    keywords="web pyramid",
+    license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
         "Framework :: Pyramid",
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
     ],
-    keywords="web pyramid",
-    packages=['pyramid_debugtoolbar_ajax'],
-    author="Jonathan Vanasco",
-    author_email="jonathan@findmeon.com",
-    url="https://github.com/jvanasco/pyramid_debugtoolbar_ajax",
-    license="MIT",
+    long_description=README,
+    packages=find_packages(),
+    include_package_data=True,
     zip_safe=False,
     install_requires=requires,
     test_suite="tests",
