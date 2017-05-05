@@ -34,7 +34,7 @@
 				<td>request.path</td>
 				<td>${request.path}</td>
 			</tr>
-			% for (k, v) in request.GET.iteritems():
+			% for (k, v) in request.GET.items():
 				<tr>
 					<td>GET: ${k}</td>
 					<td>${v}</td>
@@ -76,13 +76,13 @@
 					<td>request.path</td>
 					<td>${request.path}</td>
 				</tr>
-				% for (k, v) in request.GET.iteritems():
+				% for (k, v) in request.GET.items():
 					<tr>
 						<td>GET: ${k}</td>
 						<td>${v}</td>
 					</tr>
 				% endfor
-				% for (k, v) in request.POST.iteritems():
+				% for (k, v) in request.POST.items():
 					<tr>
 						<td>POST: ${k}</td>
 						<td>
@@ -95,10 +95,8 @@
 						</td>
 					</tr>
 				% endfor
+				<input type="submit" value="submit replay">
 			</table>
-
-
-
 		</form>
 	</div>
 % else:

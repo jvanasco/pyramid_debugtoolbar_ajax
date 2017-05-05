@@ -15,7 +15,7 @@ setup(
     author="Jonathan Vanasco",
     author_email="jonathan@findmeon.com",
     url="https://github.com/jvanasco/pyramid_debugtoolbar_ajax",
-    version="0.0.4",
+    version="0.1.0",
     description="Ajax support for pyramid_debugtoolbar",
     keywords="web pyramid",
     license="MIT",
