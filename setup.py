@@ -20,7 +20,7 @@ with open(os.path.join(os.path.dirname(__file__),
         re.S).match(v_file.read()).group(1)
 
 
-requires = ['pyramid_debugtoolbar>=2.2', ]
+requires = ['pyramid_debugtoolbar>=4.0', ]
 
 setup(
     name="pyramid_debugtoolbar_ajax",
