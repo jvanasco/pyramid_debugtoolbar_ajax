@@ -8,12 +8,13 @@ class AjaxDebugPanel(DebugPanel):
     """
     Sample debug panel
     """
-    name = 'Ajax'
+
+    name = "Ajax"
     has_content = True
-    template = 'pyramid_debugtoolbar_ajax.panels:templates/ajax.dbtmako'
+    template = "pyramid_debugtoolbar_ajax.panels:templates/ajax.dbtmako"
 
     def __init__(self, request):
-        self.data = data = {'request': request}
+        self.data = data = {"request": request}
 
     @property
     def nav_title(self):
@@ -25,8 +26,8 @@ class AjaxDebugPanel(DebugPanel):
 
     @property
     def url(self):
-        return ''
+        return ""
 
     def render_content(self, request):
-        self.data['toolbar_request'] = request
+        self.data["toolbar_request"] = request
         return DebugPanel.render_content(self, request)

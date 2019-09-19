@@ -1,7 +1,7 @@
 from .panels.ajax import AjaxDebugPanel
 
 
-__VERSION__ = '0.1.3'
+__VERSION__ = "0.1.4dev"
 
 
 def includeme(config):
