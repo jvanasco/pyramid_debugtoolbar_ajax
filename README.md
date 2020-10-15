@@ -1,6 +1,8 @@
 pyramid_debugtoolbar_ajax
 =========================
 
+Build Status: ![Python package](https://github.com/jvanasco/pyramid_debugtoolbar_ajax/workflows/Python%20package/badge.svg)
+
 This package adds an "Ajax" panel to the `pyramid_debugtoolbar`.
 
 The "Ajax" panel contains buttons and forms which can be used to replay the
