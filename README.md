@@ -11,7 +11,7 @@ errors encountered on background ajax requests, or form submissions.
 
 How to use:
 
-Add this to your pyramid includes:
+Ensure these lines are in your pyramid config file:
 
     pyramid.includes = pyramid_debugtoolbar
     debugtoolbar.includes = pyramid_debugtoolbar_ajax
