@@ -12,7 +12,9 @@ with open(os.path.join(HERE, "README.md")) as r_file:
     long_description = r_file.read()
 
 # store version in the init.py
-with open(os.path.join(HERE, "pyramid_debugtoolbar_ajax", "__init__.py")) as v_file:
+with open(
+    os.path.join(HERE, "src", "pyramid_debugtoolbar_ajax", "__init__.py")
+) as v_file:
     VERSION = re.compile(r'.*__VERSION__ = "(.*?)"', re.S).match(v_file.read()).group(1)
 
 
@@ -44,7 +46,10 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
     ],
-    packages=find_packages(),
+    packages=find_packages(
+        where="src",
+    ),
+    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     install_requires=requires,
