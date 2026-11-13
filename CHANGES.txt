@@ -1,3 +1,7 @@
+unreleased
+	* Keep Ajax replay on the toolbar origin and escape request data in the panel.
+	* Isolate replay tabs and limit POST replay to browser-compatible form data.
+
 1.0.0
 	* Moved packaging and tox configuration to setup.cfg.
 	* Updated the Python support matrix to 3.7–3.15 and added HTML coverage in CI.
