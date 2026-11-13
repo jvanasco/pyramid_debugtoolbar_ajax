@@ -1,4 +1,5 @@
 unreleased
+	* Declare the Ajax template explicitly as package data.
 	* Keep Ajax replay on the toolbar origin and escape request data in the panel.
 	* Isolate replay tabs and limit POST replay to browser-compatible form data.
 
